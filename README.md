@@ -1,2 +1,3 @@
-# lvgl_rpi_framebuffer
-LVGL on rpi framebuffer with original 7" display
+# LVGL for Raspberry pi with official 7" dislay
+
+[LVGL](https://github.com/lvgl)
