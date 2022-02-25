@@ -1,0 +1,30 @@
+#!/bin/sh
+
+# defines
+TARGET_IP=192.168.2.100
+TARGET_PORT=2345
+REMOTE_PATH=/home/pi/remote_dev/lv
+REMOTE_USER=pi
+REMOTE_APP_PATH=/home/pi/remote_dev/lv/bin/main
+
+echo "  "$TARGET_IP:$TARGET_PORT
+echo "  "$REMOTE_PATH
+echo "  "$REMOTE_USER
+echo "  "$REMOTE_APP_PATH
+
+LOCAL_IP=`ip -o route get to 8.8.8.8 | sed -n 's/.*src \([0-9.]\+\).*/\1/p'`
+echo $LOCAL_IP
+
+
+# for setting up nfs
+LOCAL_NFS_PATH=/home/jef/Work/nfs2
+echo $LOCAL_NFS_PATH
+
+LOCAL_NFS_MOUNT=/home/jef/Work/nfs2/lv
+echo $LOCAL_NFS_MOUNT
+
+LOCAL_SOURCE_ROOT=/home/jef/Desktop/rem_deb/lvgl_rpi_framebuffer
+echo $LOCAL_SOURCE_ROOT
+
+REMOTE_MOUNT=/home/pi/remote_dev
+echo $REMOTE_MOUNT

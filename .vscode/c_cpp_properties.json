@@ -1,0 +1,46 @@
+{
+    "configurations": [
+        {
+            "name": "rpi remote",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                    "TARGET_USE_FB"
+            ],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "gcc-x64",
+
+            
+
+            "customConfigurationVariables": { 
+                "remote_ip": "192.168.2.100",
+                "debug_port": "2345",
+                "remote_path":"/home/pi/remote_dev/lv",
+                "remote_user":"pi",
+                "remote_app_path":"/home/pi/remote_dev/lv/bin/main"
+            }
+
+
+        },
+
+        
+
+        {
+            "name": "SDL",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                    "TARGET_USE_SDL"
+            ],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
+}

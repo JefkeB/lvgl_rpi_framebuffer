@@ -1,0 +1,87 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+
+        {
+            "label": "clean",
+            "type": "shell",
+            "command": "./scripts/clean.sh",
+            "args": [
+            ],
+            "options": {
+                "tasksHere": {
+                    "display": true
+                }
+            }
+        },
+
+        {
+            "label": "cmake",
+            "type": "shell",
+            "command": "./scripts/cmake.sh",
+            "args": [
+            ],
+            "options": {
+                "tasksHere": {
+                    "display": true
+                }
+            }
+        },
+
+
+        {
+            "label": "make",
+            "type": "shell",
+            "command": "./scripts/make.sh",
+            "args": [
+            ],
+            "options": {
+                "tasksHere": {
+                    "display": true
+                }
+            }
+        },
+
+
+        {
+            "label": "debug start",
+            "type": "shell",
+            "command": "./scripts/debug_start.sh",
+            "args": [
+            ],
+            "options": {
+                "tasksHere": {
+                    "display": true
+                }
+            }
+        },
+
+
+        {
+            "label": "debug kill",
+            "type": "shell",
+            "command": "./scripts/debug_kill.sh",
+            "args": [
+            ],
+            "options": {
+                "tasksHere": {
+                    "display": true
+                }
+            }
+        },
+
+
+        {
+            "label": "nfs start",
+            "type": "shell",
+            "command": "./scripts/nfs_start.sh",
+            "args": [
+            ],
+            "options": {
+                "tasksHere": {
+                    "display": true
+                }
+            }
+        }
+    ]
+}
